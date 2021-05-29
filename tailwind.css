@@ -1,0 +1,17 @@
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer utilities {
+.text-stroke-2 {
+-webkit-text-stroke: 2px ;
+}
+.text-stroke-4 {
+-webkit-text-stroke: 4px ;
+}
+.text-stroke-white {
+-webkit-text-stroke-color: white;
+}
+.text-stroke-black {
+-webkit-text-stroke-color: black;
+}
+}

@@ -1,0 +1,17 @@
+{
+  "name": "vite-tailwind-jit",
+  "version": "0.0.0",
+  "scripts": {
+    "postcss:dev": "postcss ./tailwind.css -o ./style.css -w",
+    "dev": "concurrently \"npm run postcss:dev\" \"vite\"",
+    "build": "postcss ./tailwind.css -o ./style.css & vite build",
+    "serve": "vite preview --host"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "concurrently": "^6.2.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.2",
+    "vite": "^2.3.4"
+  }
+}
